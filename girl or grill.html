@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>  
+	<head>
+		<link rel='stylesheet' type='text/css' href='girlgrill.css'>
+		<title>Gender Talk</title>
+	</head>
+	
+<body>
+  <h1>What gender are you?</h1>
+<button class="button" onClick="GenderTalk()">I won't be offended!</button>
+ <p class="answer" id="demo"></p>
+  
+  
+  <script>
+    function GenderTalk() {
+      var txt;
+      var gender = prompt("Are you a boy or a girl?", "Every gender is beautiful!");
+      
+      if (gender === "girl") {
+        txt = "You're a grill.";
+      }
+
+      else if (gender === "boy") {
+        txt = "Very masculine!";
+      }
+
+      else if (gender === null) {
+        txt = "You are nothing!"
+      }
+
+      else if (gender === "") {
+        txt = "You are nothing!"
+      }
+
+      else if (gender === "Every gender is beautiful!") {
+        txt = "You are nothing!"
+      }
+
+        else {
+        txt = gender + " is NOT a real gender!";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+  </script>
+  
+  
+</body>
+</html>

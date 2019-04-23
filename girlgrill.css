@@ -1,0 +1,50 @@
+body {
+	background-color: hsla(206, 95%, 92%, 1);
+	text-align: center;
+}
+
+
+h1 {
+	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+	font-size: 20px;
+	color: hsla(0, 0%, 20%, 1);
+}
+
+
+@keyframes blink {
+   /* from {color: hsla(341, 100%, 33%, 1);}
+    to {color: yellow;}*/
+	 0%   {color:#eb476b;}
+	10% {color: #eb47a7;}
+    20%  {color:#cd47eb;}
+	30% {color: #5a47eb;}
+    40%  {color:#47c7eb;}
+	50% {color: #47eb81;}
+    60%  {color:#73eb47;}
+	70% {color: #cdeb47;}
+    80% {color:#ebca47;}
+	90% {color:#eb8947;}
+	100% {#eb5847;}
+}
+
+.button {
+	background-color: hsla(341, 97%, 74%, 1);
+	color: white;
+	text-align: center;
+	padding:  30px 60px;
+	font-size: 48px;
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+	cursor: pointer;
+	
+}
+
+.answer {
+	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial;
+	font-size: 50px;
+	font-weight: bold;
+	color: hsla(341, 100%, 33%, 1);
+	animation-name: blink;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	}
+	
